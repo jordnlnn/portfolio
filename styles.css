@@ -53,8 +53,7 @@
 
 /*about me section*/
 .about-me-section {
-    background-color: #f2f2f2;
-    background-image: url(jon-moore-6LkJpiEPl58-unsplash.jpg);
+    /*background-image: url(jon-moore-6LkJpiEPl58-unsplash.jpg);*/
     padding-top: 90px;
     padding-bottom: 90px;
 }
@@ -62,9 +61,6 @@
     margin: 0 auto;
     width: 100%;
     max-width: 70%;
-    background-color: rgba(255,255,255,0.85);
-    border-radius: 5px;
-    box-shadow: 0px 8px 40px rgba(0,0,0,0.5);
 }
 .about-me-column h2 {
     font-size: 50px;
@@ -116,7 +112,9 @@
 /*my skills section*/
 .my-skills-section {
     padding: 20px;
-    background-color: #c5c5c5;
+    background-color: #000000;
+    background-image: url(./peter-gargiulo-cGNCepznaV8-unsplash.jpg);
+    background-attachment: fixed;
 }
 .my-skills-row {
     width: 100%;
@@ -127,9 +125,10 @@
     font-size: 50px;
     font-weight: 700;
     text-align: center;
+    color: #ffffff;
 }
 .my-skills-section i {
-    font-size: 100px;
+    font-size: 60px;
     color: #975559;
 }
 .my-skills-section ul {
@@ -144,27 +143,87 @@
 .my-skills-section li {
     display: block;
     list-style: none;
+    text-align: center;
 }
+
 .first-skills-row {
     padding: 50px;
 }
 .first-skills-row h3 {
     text-align: center;
     font-size: 18px;
+    color: #ffffff;
 }
 .second-skills-row {
     padding: 50px;
 }
 .second-skills-row h3 {
-    text-align: center;
     font-size: 18px;
+    color: #ffffff;
+}
+
+/*expanding cards css section*/
+#expanding-cards-section {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 480px) {
+    .container {
+        width: 100vh;
+    }
+
+    .panel:nth-of-type(3) {
+        display: none;
+    }
 }
 
 
 /*my work section*/
 .my-work-section {
-    background-color: rgba(188,143,143,0.3);
-    background-image: url(jon-moore-6LkJpiEPl58-unsplash.jpg);
+    /*background-image: url(jon-moore-6LkJpiEPl58-unsplash.jpg);*/
    
     background-size: cover;
     padding-top: 90px;
@@ -174,9 +233,7 @@
     font-size: 50px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 50px;
-    color: rgba(255,255,255,0.9);
-    text-shadow: -1px 3px #000;    
+    color: #000000;    
 
 }
 .my-work-section h3 {
