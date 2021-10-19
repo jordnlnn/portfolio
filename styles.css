@@ -1,11 +1,10 @@
+* {
+    font-family:
+}
 /*header section*/
 .header-section {
-    /*background: no-repeat center/100% url("./arizona-background.jpg");
-    background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 150px;*/
     text-align: center;
-    height: 70vh;
+    height: 80vh;
     background-image: url(./peter-gargiulo-cGNCepznaV8-unsplash.jpg);
     background-attachment: fixed;
     display: flex;
@@ -13,18 +12,10 @@
     align-content: center;
     flex-direction: column;
 }
-/*.parallax {
-    background-image: url("./arizona-background.jpg");
-    height: fit-content;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
 .header-section h1 {
-    font-size: 90px;
-    font-weight: 900;
-    color: rgba(255,255,255,1);
+    font-size: 80px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
 }
 .header-section h3 {
     font-size: 45px;
@@ -53,30 +44,25 @@
 
 /*about me section*/
 .about-me-section {
-    /*background-image: url(jon-moore-6LkJpiEPl58-unsplash.jpg);*/
-    padding-top: 90px;
-    padding-bottom: 90px;
+    text-align: center;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 .about-me-row {
     margin: 0 auto;
     width: 100%;
-    max-width: 70%;
+    max-width: 80%;
 }
-.about-me-column h2 {
+.about-me-section h2 {
     font-size: 50px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
 }
-.about-me-text-module {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    padding-top: 8%;
-    padding-bottom: 8%;
-}
+
 .about-me-contact-button {
     background: #975559;
     padding: 15px 30px;
@@ -100,32 +86,28 @@
     text-align: center;
     padding-right: 0px;
 }
-.image-column img {
-    margin: 0 auto;
-    max-width: 100%;
-    height: 65vh;
-    object-fit: cover;
-    border-radius: 0px 5px 5px 0px;
-}
  
 
 /*my skills section*/
 .my-skills-section {
-    padding: 20px;
     background-color: #000000;
     background-image: url(./peter-gargiulo-cGNCepznaV8-unsplash.jpg);
     background-attachment: fixed;
+    height: 80vh; 
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
 }
 .my-skills-row {
     width: 100%;
-
     margin: 0 auto;
 }
 .my-skills-section h2 {
     font-size: 50px;
     font-weight: 700;
     text-align: center;
-    color: #ffffff;
+    color:rgba(255,255,255,0.8);
 }
 .my-skills-section i {
     font-size: 60px;
@@ -146,20 +128,33 @@
     text-align: center;
 }
 
-.first-skills-row {
+.skills-row {
     padding: 50px;
 }
-.first-skills-row h3 {
+.skills-row h3 {
     text-align: center;
     font-size: 18px;
     color: #ffffff;
 }
-.second-skills-row {
-    padding: 50px;
+
+
+
+
+/*project section*/
+.my-work-section {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
-.second-skills-row h3 {
-    font-size: 18px;
-    color: #ffffff;
+
+.my-work-section h2 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;    
+    margin-bottom: 0px;
 }
 
 /*expanding cards css section*/
@@ -168,21 +163,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 80vh;
     overflow: hidden;
     margin: 0 auto;
 }
 
 .container {
     display: flex;
-    width: 90vw;
+    width: 80%;
 }
 
 .panel {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 60vh;
     border-radius: 50px;
     border: 1px solid #000;
     color: #000;
@@ -221,95 +216,17 @@
 }
 
 
-/*my work section*/
-.my-work-section {
-    /*background-image: url(jon-moore-6LkJpiEPl58-unsplash.jpg);*/
-   
-    background-size: cover;
-    padding-top: 90px;
-    padding-bottom: 90px;
-}
-.my-work-section h2 {
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center;
-    color: #000000;    
 
-}
-.my-work-section h3 {
-    font-size: 38px;
-    font-weight: 300;
-}
-.work-row {
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 5px;
-    width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-    box-shadow: 0px 8px 40px rgba(0,0,0,0.2);
-}
-.image-column-two {
-    padding: auto 0px;
+/*contact section*/
+.contact-section {
     text-align: center;
-    padding-left: 0px;
-}
-#landing-page-pic {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px 0px 0px 5px;
-    margin: 0 auto;
-    object-fit: cover;
-}
-
-.work-row-two, .work-row-three, .work-row-four {
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 5px;
-    width: 100%;
-    max-width: 80%;
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: 0px 8px 40px rgba(0,0,0,0.3);
-}
-.project-description {
+    height: 40vh;
+    background-image: url(./peter-gargiulo-cGNCepznaV8-unsplash.jpg);
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-}
-.image-column-three, .image-column-four {
-    padding: auto 0px;
-    text-align: center;
-    padding-left: 0px;
-
-}
-#first-weather-project {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px 0px 0px 5px;
-        object-fit: cover;
-}
-#react-weather-pic {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px 0px 0px 5px;
-    object-fit: cover;
-}
-.click-text {
-    color: #975559;
-}
-.click-text:hover {
-    color: rosybrown;
-    text-decoration: line-through;
-}
-
-/*contact section*/
-.contact-section {
-    padding-top: 50px;
-    padding-bottom: 100px;
-    text-align: center;
-    background: linear-gradient(135deg, #000000 90%, #3b3b3b 50%);
-
 }
 .contact-section h2 {
     font-size: 50px;
@@ -351,11 +268,6 @@
     color:rosybrown;
     overflow: hidden;
 }
-footer {
-    bottom: 5px;
-    background-color: #000000;
-    background: linear-gradient(135deg, #000000 84%, #3b3b3b 50%);
-
-    text-align: center;
-    color:#3b3b3b;
+.contact-section small {
+    color: rgba(255,255,255,0.7);
 }
