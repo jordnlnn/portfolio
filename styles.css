@@ -44,7 +44,8 @@
 /*mobile responsiveness*/
 @media(max-width: 810px) {
     .header-section {
-        height: 60vh;
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
 
     .header-section h1 {
@@ -83,6 +84,10 @@
     margin-bottom: 20px;
 }
 @media (max-width: 480px) {
+     .about-me-section {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
     .about-me-section h2 {
         font-size: 40px;
         margin-bottom: 10px;
@@ -90,6 +95,7 @@
     .about-me-section p {
         font-size: 14px;
     }
+   
 }
 
 .about-me-contact-button {
@@ -113,7 +119,8 @@
 /*tablet responsiveness*/
 @media(max-width: 810px) {
   .about-me-section {
-      height: 60vh;
+      padding-top: 90px;
+      padding-bottom: 90px;
   }
 }
 
@@ -193,7 +200,8 @@
 /*tablet responsiveness*/
 @media(max-width: 810px) {
     .my-skills-section {
-        height: 60vh;
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
   }
 
@@ -212,8 +220,8 @@
     .my-work-section {
         height: 1000px;
         flex-direction: column;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
   }
 @media(max-width: 480px) {
@@ -322,6 +330,11 @@
     align-content: center;
     flex-direction: column;
 }
+@media(max-width: 480px) {
+    .contact-section {
+       height: 60vh;
+    }
+}
 .contact-section h2 {
     font-size: 50px;
     font-weight: 700;
@@ -369,5 +382,6 @@
 }
 .contact-section small {
     color: rgba(255,255,255,0.7);
+    margin-top: 30px;
 }
 
