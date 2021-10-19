@@ -1,6 +1,7 @@
 * {
-    font-family:
+    width: 100%;
 }
+
 /*header section*/
 .header-section {
     text-align: center;
@@ -39,6 +40,20 @@
 .header-button a {
     text-decoration: none;
     color: white;
+}
+/*mobile responsiveness*/
+@media(max-width: 810px) {
+    .header-section {
+        height: 60vh;
+    }
+
+    .header-section h1 {
+        font-size: 70px;
+    }
+
+    .header-section h3 {
+        font-size: 30px;
+    }
 }
 
 
@@ -86,6 +101,16 @@
     text-align: center;
     padding-right: 0px;
 }
+/*tablet responsiveness*/
+@media(max-width: 810px) {
+  .about-me-section {
+      height: 60vh;
+  }
+}
+
+
+
+
  
 
 /*my skills section*/
@@ -98,6 +123,11 @@
     align-content: center;
     display: flex;
     flex-direction: column;
+}
+@media(max-width: 480px) {
+    .my-skills-section {
+    flex-direction: column;
+    }
 }
 .my-skills-row {
     width: 100%;
@@ -136,6 +166,12 @@
     font-size: 18px;
     color: #ffffff;
 }
+/*tablet responsiveness*/
+@media(max-width: 810px) {
+    .my-skills-section {
+        height: 60vh;
+    }
+  }
 
 
 
@@ -148,13 +184,26 @@
     flex-direction: column;
     height: 100vh;
 }
+@media(max-width: 810px) {
+    .my-work-section {
+        height: 1000px;
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+  }
+@media(max-width: 480px) {
+    .my-work-section {
+        height: 800px;
+    }
+}
 
 .my-work-section h2 {
     font-size: 50px;
     font-weight: 700;
     text-align: center;
     color: #000000;    
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 }
 
 /*expanding cards css section*/
@@ -163,14 +212,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
     overflow: hidden;
     margin: 0 auto;
+    width: 100%;
 }
 
 .container {
     display: flex;
-    width: 80%;
+    width: 100%;
 }
 
 .panel {
@@ -180,21 +229,40 @@
     height: 60vh;
     border-radius: 50px;
     border: 1px solid #000;
-    color: #000;
     cursor: pointer;
     flex: 0.5;
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
 }
+/*tablet responsiveness*/
+@media(max-width: 810px) {
+    .panel {
+        height: 40vh;
+        width: 100%;
+        background-size: cover;
+        flex-direction: column;
+    }
+    #expanding-cards-section {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .container {
+        height: 100%;
+    }
+  }
 
 .panel h3 {
-    font-size: 24px;
+    font-size: 22px;
     position: absolute;
     bottom: 20px;
     left: 20px;
     margin: 0;
     opacity: 0;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 50px;
 }
 
 .panel.active {
@@ -203,13 +271,13 @@
 .panel.active h3 {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
+    background: #fff;
 }
 
 @media(max-width: 480px) {
     .container {
         width: 100vh;
     }
-
     .panel:nth-of-type(3) {
         display: none;
     }
