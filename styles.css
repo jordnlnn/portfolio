@@ -55,6 +55,11 @@
         font-size: 30px;
     }
 }
+@media(max-width: 480px) {
+    .header-section h1 {
+        font-size: 50px;
+    }
+}
 
 
 /*about me section*/
@@ -77,6 +82,15 @@
     text-align: center;
     margin-bottom: 20px;
 }
+@media (max-width: 480px) {
+    .about-me-section h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .about-me-section p {
+        font-size: 14px;
+    }
+}
 
 .about-me-contact-button {
     background: #975559;
@@ -95,11 +109,6 @@
 .about-me-contact-button a {
     text-decoration: none;
     color: white;
-}
-.image-column {
-    padding: auto 0px;
-    text-align: center;
-    padding-right: 0px;
 }
 /*tablet responsiveness*/
 @media(max-width: 810px) {
@@ -139,9 +148,19 @@
     text-align: center;
     color:rgba(255,255,255,0.8);
 }
+@media (max-width: 480px) {
+    .my-skills-section h2 {
+        font-size: 40px;
+    }
+}
 .my-skills-section i {
     font-size: 60px;
     color: #975559;
+}
+@media (max-width: 480px) {
+    .my-skills-section i {
+        font-size: 40px;
+    }
 }
 .my-skills-section ul {
     display: flex;
@@ -165,6 +184,11 @@
     text-align: center;
     font-size: 18px;
     color: #ffffff;
+}
+@media (max-width: 480px) {
+    .skills-row h3 {
+        font-size: 16px;
+    }
 }
 /*tablet responsiveness*/
 @media(max-width: 810px) {
@@ -205,6 +229,12 @@
     color: #000000;    
     margin-bottom: 50px;
 }
+@media (max-width: 480px) {
+    .my-work-section h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+}
 
 /*expanding cards css section*/
 #expanding-cards-section {
@@ -239,14 +269,12 @@
 @media(max-width: 810px) {
     .panel {
         height: 40vh;
-        width: 100%;
         background-size: cover;
         flex-direction: column;
     }
     #expanding-cards-section {
         flex-direction: column;
         height: 100%;
-        width: 100%;
     }
     .container {
         height: 100%;
@@ -261,8 +289,6 @@
     margin: 0;
     opacity: 0;
     color: #000000;
-    padding: 5px 10px;
-    border-radius: 50px;
 }
 
 .panel.active {
@@ -271,15 +297,15 @@
 .panel.active h3 {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
-    background: #fff;
+    background-color: #ffffff;
+    width: 275px;
+    border-radius: 40px;
+    padding: 5px 10px;
 }
 
 @media(max-width: 480px) {
     .container {
         width: 100vh;
-    }
-    .panel:nth-of-type(3) {
-        display: none;
     }
 }
 
@@ -302,6 +328,11 @@
     text-align: center;
     margin-bottom: 20px;
     color:rgba(255,255,255,0.8);
+}
+@media (max-width: 480px) {
+    .contact-section h2 {
+        font-size: 40px;
+    }
 }
 .contact-section p {
     font-size: 22px;
@@ -339,3 +370,4 @@
 .contact-section small {
     color: rgba(255,255,255,0.7);
 }
+
