@@ -1,5 +1,6 @@
 * {
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*header section*/
@@ -13,6 +14,10 @@
     align-content: center;
     flex-direction: column;
 }
+.header-section img {
+    max-width: 20%;
+    margin-bottom: 30px;
+}
 .header-section h1 {
     font-size: 80px;
     font-weight: 700;
@@ -21,21 +26,21 @@
 .header-section h3 {
     font-size: 45px;
     font-weight: 500;
-    color: rgba(255,255,255,0.7);
+    color:#ff6347;
 }
 .header-button {
-    background: #975559;
-    padding: 15px 30px;
-    margin-top: 15px;
+    background: rgba(255, 192, 74, 0.5);
+    margin-top: 30px;
     border: 0px;
+    border-radius: 0px;
     color: white;
-    width: 300px;
-    text-align: center;
-    margin: 15px auto 0px;
-    border-radius: 5px;
+    text-align: center;  
+    padding: 15px 30px;
+    width: 200px;
 }
 .header-button:hover {
-    background: rosybrown;
+    background: #ff6347;
+    font-weight: bold;
 }
 .header-button a {
     text-decoration: none;
@@ -99,18 +104,18 @@
 }
 
 .about-me-contact-button {
-    background: #975559;
+    background: rgba(255, 192, 74, 0.5);
     padding: 15px 30px;
     margin-top: 15px;
     border: 0px;
-    color: white;
+    color: #000000;
     width: 300px;
     text-align: center;
     margin: 15px auto 0px;  
-    border-radius: 5px; 
 }
 .about-me-contact-button:hover {
-    background: rosybrown;
+    background: #ff6347;
+    font-weight: bold;
 }
 .about-me-contact-button a {
     text-decoration: none;
@@ -162,7 +167,7 @@
 }
 .my-skills-section i {
     font-size: 60px;
-    color: #975559;
+    color: #ff6347;
 }
 @media (max-width: 480px) {
     .my-skills-section i {
@@ -366,18 +371,18 @@
 }
 .contact-section ul li {
     font-size: 40px;
-    color: #975559;
+    color: #ff6347;
 }
 .contact-section ul li:hover {
     font-size: 50px;
     margin-top: -15px;
 }
 .contact-section ul li a{
-    color: #975559;
+    color: #ff6347;
     text-decoration: none;
 }
 .contact-section a:hover {
-    color:rosybrown;
+    color: #FFC04A;
     overflow: hidden;
 }
 .contact-section small {
