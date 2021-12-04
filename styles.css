@@ -6,7 +6,7 @@
 /*header section*/
 .header-section {
     text-align: center;
-    height: 80vh;
+    height: 800px;
     background-image: url(./peter-gargiulo-cGNCepznaV8-unsplash.jpg);
     background-attachment: fixed;
     display: flex;
@@ -15,7 +15,7 @@
     flex-direction: column;
 }
 .header-section img {
-    max-width: 20%;
+    max-width: 15%;
     margin-bottom: 30px;
 }
 .header-section h1 {
@@ -29,23 +29,27 @@
     color:#ff6347;
 }
 .header-button {
-    background: rgba(255, 192, 74, 0.5);
-    margin-top: 30px;
+    background: rgba(255, 192, 74, 0.9);
     border: 0px;
     border-radius: 0px;
-    color: white;
-    text-align: center;  
+    color: #000000;
+    margin-top: 30px;
     padding: 15px 30px;
-    width: 200px;
+    text-align: center;  
+    width: 250px;
+    font-size: 14px;
 }
 .header-button:hover {
     background: #ff6347;
     font-weight: bold;
+    font-size: 14px;
 }
 .header-button a {
     text-decoration: none;
     color: white;
+    font-size: 14px;
 }
+
 /*mobile responsiveness*/
 @media(max-width: 810px) {
     .header-section {
@@ -68,26 +72,61 @@
 }
 
 
-/*about me section*/
+/*approach section*/
 .about-me-section {
-    text-align: center;
-    height: 80vh; 
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-.about-me-row {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80%;
+    height: 800px; 
+    padding: 50px;
 }
 .about-me-section h2 {
-    font-size: 50px;
-    font-weight: 700;
+    /*background-color: navajowhite;*/
+    color: rgba(0,0,0,0.8);
+    font-size: 70px;
+    font-weight: bolder;
+    margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
+    z-index: 1;
 }
+.about-me-section h3 {
+    /*background-color: paleturquoise;*/
+    font-size: 25px;
+    font-weight: light;
+    margin: 0 auto 50px;
+    text-align: center;
+    z-index: 2;
+}
+
+.about-me-row {
+    height: 400px;
+    margin: auto;
+    max-width: 80%;
+    width: 100%;
+}
+/*.step-blurb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}*/
+.step-column {
+    background-color: #f9f9f9;
+    box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 50px;
+}
+.step-number {
+    color: #ffc04a;
+    font-weight: 700;
+}
+.step-column h4 {
+    color: #ff6347;
+    font-weight: 300;
+}
+/*
 @media (max-width: 480px) {
      .about-me-section {
         padding-top: 90px;
@@ -100,18 +139,16 @@
     .about-me-section p {
         font-size: 14px;
     }
-   
 }
-
+*/
 .about-me-contact-button {
-    background: rgba(255, 192, 74, 0.5);
-    padding: 15px 30px;
-    margin-top: 15px;
+    background: rgba(255, 192, 74, 0.9);
     border: 0px;
     color: #000000;
-    width: 300px;
-    text-align: center;
-    margin: 15px auto 0px;  
+    display: flex;
+    padding: 15px 30px;
+    margin: 50px auto auto;
+    width: 250px;
 }
 .about-me-contact-button:hover {
     background: #ff6347;
@@ -119,15 +156,17 @@
 }
 .about-me-contact-button a {
     text-decoration: none;
-    color: white;
+    color: #000000;
 }
+
 /*tablet responsiveness*/
+/*
 @media(max-width: 810px) {
   .about-me-section {
       padding-top: 90px;
       padding-bottom: 90px;
   }
-}
+}*/
 
 
 
