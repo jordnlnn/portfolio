@@ -51,14 +51,15 @@
 }
 
 /*mobile responsiveness*/
-@media(max-width: 810px) {
+@media(max-width: 834px) {
     .header-section {
         padding-top: 90px;
         padding-bottom: 90px;
+        height: auto;
     }
 
     .header-section h1 {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .header-section h3 {
@@ -78,16 +79,14 @@
     padding: 50px;
 }
 .about-me-section h2 {
-    /*background-color: navajowhite;*/
     color: rgba(0,0,0,0.8);
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bolder;
     margin: 0 auto;
     text-align: center;
     z-index: 1;
 }
 .about-me-section h3 {
-    /*background-color: paleturquoise;*/
     font-size: 25px;
     font-weight: light;
     margin: 0 auto 50px;
@@ -101,15 +100,8 @@
     max-width: 80%;
     width: 100%;
 }
-/*.step-blurb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-}*/
 .step-column {
-    background-color: #f9f9f9;
+    background-color: #f7F7F7;
     box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
@@ -125,6 +117,34 @@
 .step-column h4 {
     color: #ff6347;
     font-weight: 300;
+}
+@media (max-width: 834px) {
+    .about-me-section {
+        height: 100%;
+        max-height: 100%;
+        padding: 40px;
+    }
+    .about-me-section h2 {
+        font-size: 40px;
+    }
+    .about-me-section h3 {
+        /*background-color: paleturquoise;*/
+        font-size: 20px;
+    }
+    .about-me-row {
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .step-column {
+        margin: 5px;
+        padding: 40px;
+    }
+    .about-me-contact-button {
+        margin-top: 40px;
+    }
 }
 /*
 @media (max-width: 480px) {
@@ -349,10 +369,15 @@
 .panel.active h3 {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
-    background-color: #ffffff;
+    background-color: #000000;
+    color: #ff6347;
     width: 275px;
     border-radius: 40px;
     padding: 5px 10px;
+}
+.panel.active a {
+    text-decoration: none;
+    color: #ff6347;
 }
 
 @media(max-width: 480px) {
